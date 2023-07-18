@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="inputs-container bg-light w-75 m-auto p-3 my-3">
+      <div class="container">
+        <div class="input-part mb-3">
+          <label for="productName">Product Name:</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            id="productName"
+            placeholder="Product Name"
+          />
+          <div class="alert alert-danger d-none" role="alert" id="alert1">
+            This Field is required to display the product! Please Fill the field.
+          </div>
+        </div>
+
+        <div class="input-part mb-3">
+          <label for="productPrice">Product Price:</label>
+          <input
+            type="number"
+            class="form-control mb-2"
+            id="productPrice"
+            placeholder="Product Price"
+          />
+          <div class="alert alert-danger d-none" role="alert" id="alert2">
+            This Field is required to display the product! Please Fill the field.
+          </div>
+        </div>
+        <div class="input-part mb-3">
+          <label for="productCategory">Product Category:</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            id="productCategory"
+            placeholder="Product Category"
+          />
+          <div class="alert alert-danger d-none" role="alert" id="alert3">
+            This Field is required to display the product! Please Fill the field.
+          </div>
+        </div>
+        <div class="input-part mb-3">
+          <label for="productDesc">Product Description:</label>
+          <textarea
+            id="productDesc"
+            class="form-control mb-2"
+            placeholder="Product Description"
+          ></textarea>
+          <div class="alert alert-danger d-none" role="alert" id="alert4">
+            This Field is required to display the product! Please Fill the field.
+          </div>
+        </div>
+        <button
+          class="btn btn-success w-100"
+          onclick="addProduct()"
+          id="addBtn"
+        >
+          Add Product
+        </button>
+        <button
+          class="btn btn-success w-100 mt-2 d-none"
+          onclick="updateProduct()"
+          id="updateBtn"
+        >
+          Update Product
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="info-viewer bg-light w-75 m-auto text-center py-3 mt-4 rounded-3" id="info">
+      <div class="container table-responsive-md">
+        <label for="searchInput" class="fs-5 mb-2">Search</label>
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control mb-3"
+          oninput="searchProduct() "
+        />
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="products"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

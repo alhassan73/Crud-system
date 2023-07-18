@@ -1,0 +1,42 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.inputs-container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #a29f9f44;
+}
+.inputs-container .container #productDesc {
+  resize: none;
+  height: 120px;
+}
+
+.input-part input:focus {
+  box-shadow: 0 0 0 0.5px rgb(43, 226, 43) !important;
+}
+.input-part input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.input-part textarea:focus {
+  box-shadow: 0 0 0 0.5px rgb(43, 226, 43) !important;
+}
+.info-viewer #searchInput:focus {
+  box-shadow: 0 0 0 0.5px rgb(43, 226, 43) !important;
+}
+
+table {
+  box-shadow: 0 1px 3px #706e6e60;
+  border-radius: 10px;
+  overflow: hidden;
+}
