@@ -1,4 +1,9 @@
-#Simple Product Managing System
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>Simple Product Managing System</h1>
   <p>This project is a simple dashboard that applies CRUD (Create, Read, Update, Delete) operations to control adding, reading, modifying, and deleting products. It is built using HTML, CSS, JavaScript, and Bootstrap.</p>
 
   <h2>Table of Contents</h2>
@@ -53,5 +58,5 @@
   <h2 id="license">License</h2>
   <p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
 
-  <h2 id="acknowledgments">Acknowledgments</h2>
-  <!-- Mention any individuals, projects, or resources that inspired or contributed to the project -->
+</body>
+</html>
