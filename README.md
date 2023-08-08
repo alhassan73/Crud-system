@@ -54,8 +54,7 @@
   </ol>
   <p>Please ensure your code follows the project's coding guidelines and is well-documented.</p>
 
-  <h2 id="license">License</h2>
-  <p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+ 
 
 </body>
 </html>
